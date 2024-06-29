@@ -1,4 +1,3 @@
-"use client";
 import {
   VStack,
   Text,
@@ -141,7 +140,7 @@ export const Footer: React.FC = () => {
   );
 
   return (
-    <Flex bgColor={"#191714"}>
+    <Flex bgColor={"#FFF8E7"}>
       <Container
         maxW={"container.xl"}
         display={"flex"}
