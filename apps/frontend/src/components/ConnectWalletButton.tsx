@@ -17,6 +17,7 @@ export const ConnectWalletButton = () => {
           size="md"
           leftIcon={<FaWallet />}
           data-testid="connect-wallet"
+          bg="#DB4A2B"  // Add this line to set background color
         >
           Connect Wallet
         </Button>
@@ -30,7 +31,7 @@ export const ConnectWalletButton = () => {
         rounded={"full"}
         color="black"
         size="md"
-        bg="rgba(235, 236, 252, 1)"
+        bg="rgba(235, 236, 252, 1)"  // Or whatever previous background color you had
       >
         <HStack spacing={2}>
           <AddressIcon address={account} boxSize={4} rounded={"full"} />
