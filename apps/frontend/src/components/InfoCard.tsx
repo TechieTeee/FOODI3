@@ -41,6 +41,7 @@ export const InfoCard = () => {
                   leftIcon={<MdOutlineArrowOutward />}
                   mt={{ base: 2, md: 0 }}
                   ml={{ base: 0, md: 2 }}
+                  bg="#DB4A2B"  // Add this line to set background color
                 >
                   Github repository
                 </Button>
