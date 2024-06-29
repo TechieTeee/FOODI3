@@ -26,7 +26,7 @@ export const InfoCard = () => {
             <HStack alignSelf={{ base: "center", md: "flex-start" }}>
               <Image src="/logo.png" h={16} borderRadius={16} />
               <Text fontSize={24} fontWeight={800}>
-                EcoEarn
+                FOODI3
               </Text>
             </HStack>
             <Flex
