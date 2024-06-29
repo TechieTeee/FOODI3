@@ -48,7 +48,7 @@ export const Footer: React.FC = () => {
           lineHeight="17px"
           color="#8c8c8c"
         >
-          2024 VeBetterDAO. All rights reserved.
+          2024 FOODI3. All rights reserved.
         </Text>
         <HStack spacing={4}>
           <Link href={PRIVACY_POLICY_LINK} isExternal>
