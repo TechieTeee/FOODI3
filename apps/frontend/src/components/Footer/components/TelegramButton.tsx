@@ -9,7 +9,7 @@ export const TelegramButton: React.FC = () => {
         onClick={() => {}}
         leftIcon={<FaTelegram size={24} />}
         textColor={"white"}
-        bgColor={`#DB4A2B`}  // Update background color here
+        bgColor={`#DB4A2B`}  // Updated background color
         _hover={{ bg: "#0088cc" }}
         borderRadius={22}
       >
