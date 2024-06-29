@@ -3,19 +3,19 @@ import { Step } from "./Step";
 
 const Steps = [
   {
-    icon: "/steps/1.svg",
-    title: "Purchase eco-friendly products",
-    description: "Buy products that are eco-friendly and sustainable.",
+    icon: "/notification.png",
+    title: "TAG",
+    description: "Tag, you're it! Get real-time notifications for manager specials. Visit your preferred store and snag your favorite deals.",
   },
   {
-    icon: "/steps/2.svg",
-    title: "Upload the receipt",
-    description: "Upload your receipt and AI will verify the products.",
+    icon: "/grocery-cart.png",
+    title: "SNAG",
+    description: "Head to your chosen store and snag your favorite deals.",
   },
   {
-    icon: "/steps/3.svg",
-    title: "Earn rewards",
-    description: "Earn B3TR for purchasing eco-friendly products.",
+    icon: "/money.png",
+    title: "BAG",
+    description: "Secure the bag: scan your receipt, compete on the foodi3 leaderboard and earn rewards like extra grocery discounts, savings on local events, and B3tter tokens for anything.",
   },
 ];
 
