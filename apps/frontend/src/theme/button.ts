@@ -1,4 +1,4 @@
-import { ComponentStyleConfig } from "@chakra-ui/react";
+import { ComponentStyleConfig } from "@chakra-ui/react"
 
 export const ButtonStyle: ComponentStyleConfig = {
   // style object for base or default style
@@ -8,11 +8,10 @@ export const ButtonStyle: ComponentStyleConfig = {
   // styles for different visual variants ("outline", "solid")
   variants: {
     primarySubtle: {
-      bg: "#DB4A2B", // Change the background color to #DB4A2B
-      color: "white",  // Adjust text color for better contrast
+      bg: "rgba(224, 233, 254, 1)",
+      color: "primary.500",
       _hover: {
-        bg: "#DB4A2B", // Keep hover background consistent
-        opacity: 0.8,  // Apply opacity for hover effect
+        bg: "rgba(224, 233, 254, 0.8)",
       },
     },
   },
@@ -22,4 +21,4 @@ export const ButtonStyle: ComponentStyleConfig = {
     rounded: "full",
     variant: "solid",
   },
-};
+}

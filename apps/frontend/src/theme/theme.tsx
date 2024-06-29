@@ -15,11 +15,11 @@ const themeConfig = {
 
   semanticTokens: {
     colors: {
-      "chakra-body-text": {
+      "chakra-body-text": { // Text color
         _light: "#1E1E1E",
       },
-      "chakra-body-bg": {
-        _light: "#F7F7F7",
+      "chakra-body-bg": {  // Background color
+        _light: "#FFF8E7", // Update this with your desired color
       },
     },
   },
@@ -45,3 +45,5 @@ export const lightTheme = extendTheme({
   ...themeConfig,
   colors: lightThemeColors,
 });
+
+export default lightTheme; // Export the light theme if needed
