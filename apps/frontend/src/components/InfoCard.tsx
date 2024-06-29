@@ -33,7 +33,7 @@ export const InfoCard = () => {
               mt={{ base: 4, md: 0 }}
               direction={{ base: "column", md: "row" }}
             >
-              <Link isExternal href="https://github.com/vechain/x-app-template">
+              <Link isExternal href="https://github.com/TechieTeee/Foodi3">
                 <Button
                   rounded={"full"}
                   colorScheme="primary"
