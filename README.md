@@ -1,25 +1,4 @@
-# X-App Template for VeBetterDAO 🚀
-
-                                     #######
-                                ################
-                              ####################
-                            ###########   #########
-                           #########      #########
-         #######          #########       #########
-         #########       #########      ##########
-          ##########     ########     ####################
-           ##########   #########  #########################
-             ################### ############################
-              #################  ##########          ########
-                ##############      ###              ########
-                 ############                       #########
-                   ##########                     ##########
-                    ########                    ###########
-                      ###                    ############
-                                         ##############
-                                   #################
-                                  ##############
-                                  #########
+Foodi3
 
 Unlock the potential of decentralized application development on Vechain with our X-App template for VeBetterDAO. Designed for the Vechain Thor blockchain, this template integrates cutting-edge technologies such as React, TypeScript, Hardhat, and Express, ensuring a seamless and efficient DApp development experience. 🌟
 
@@ -117,11 +96,3 @@ Open the `Inspector` tab and perform the following transactions:
 ![image](https://github.com/vechain/x-app-template/assets/64158778/834437e5-8de1-4802-9ed7-dca6fe4df332)
 - **Trigger cycle:** Trigger the cycle for the EcoEarn contract
 ![image](https://github.com/vechain/x-app-template/assets/64158778/00236dcd-5b64-4493-9acd-55c6a7f0981f)
-
-## Disclaimer ⚠️
-
-This template serves as a foundational starting point and should be thoroughly reviewed and customized to suit your project’s specific requirements. Pay special attention to configurations, security settings, and environment variables to ensure a secure and efficient deployment.
-
----
-
-Embrace the power of VeBetterDAO's X-Apps template and transform your DApp development experience. Happy coding! 😄
