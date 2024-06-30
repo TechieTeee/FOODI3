@@ -82,7 +82,7 @@ export const Dropzone = () => {
 
         setResponse(response);
       } catch (error) {
-        alert("Error submitting receipt");
+        alert(error);
       } finally {
         setIsLoading(false);
       }
