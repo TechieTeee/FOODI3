@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { useCallback, useState } from "react";
 import { useDropzone } from "react-dropzone";
 import { Box, HStack, Text, VStack } from "@chakra-ui/react";
 import { ScanIcon } from "./Icon";
@@ -10,19 +10,24 @@ import { useDisclosure, useSubmission } from "../hooks";
 
 export const Dropzone = () => {
   const { account } = useWallet();
-
   const { executeRecaptcha } = useGoogleReCaptcha();
-
   const { setIsLoading, setResponse } = useSubmission();
   const { onOpen } = useDisclosure();
+  const [isDragging, setIsDragging] = useState(false);
 
-  const { getRootProps, getInputProps, isDragActive } = useDropzone({
+  const { getRootProps, getInputProps } = useDropzone({
     onDrop: (acceptedFiles: File[]) => {
       onFileUpload(acceptedFiles); // Pass the files to the callback
     },
     maxFiles: 1, // Allow only one file
     accept: {
       "image/*": [], // Accept only image files
+    },
+    onDragEnter: () => {
+      setIsDragging(true);
+    },
+    onDragLeave: () => {
+      setIsDragging(false);
     },
   });
 
@@ -91,15 +96,15 @@ export const Dropzone = () => {
         {...getRootProps()}
         p={5}
         border="2px"
-        borderColor={isDragActive ? "green.300" : "gray.300"}
+        borderColor={isDragging ? "#FFA500" : "#00BF63"}
         borderStyle="dashed"
         borderRadius="md"
-        bg={isDragActive ? "green.100" : "gray.50"}
+        bg={isDragging ? "#FFA5001A" : "#00BF6333"}
         textAlign="center"
         cursor="pointer"
         _hover={{
-          borderColor: "green.500",
-          bg: "green.50",
+          borderColor: "#FFA500",
+          bg: "#FFA5001A",
         }}
         w={"full"}
         h={"200px"}
