@@ -1,5 +1,4 @@
-import { Card, Flex } from "@chakra-ui/react";
-import { Step } from "./Step";
+import { Card, Flex, Image, Text } from "@chakra-ui/react";
 
 const Steps = [
   {
@@ -21,14 +20,54 @@ const Steps = [
 
 export const Instructions = () => {
   return (
-    <Card mt={3} w={"full"} bg="#FFF8E7"> {/* Changed bg color to #FFF8E7 */}
+    <Card mt={3} w="full" bg="#FFF8E7" borderRadius={8} p={4}>
       <Flex
         p={{ base: 4 }}
-        w="100%"
+        w="full"
         direction={{ base: "column", md: "row" }}
+        justifyContent="space-around" // Adjust alignment as needed
+        alignItems="center" // Adjust alignment as needed
+        flexWrap="wrap" // Ensure responsiveness on smaller screens
       >
         {Steps.map((step, index) => (
-          <Step key={index} {...step} />
+          <Flex
+            key={index}
+            direction="column"
+            alignItems="center"
+            textAlign="center"
+            maxW={{ base: "full", md: "md" }}
+            p={6}
+            borderWidth={1}
+            borderRadius={8}
+            borderColor="#E2E8F0"
+            bg="white"
+            m={{ base: 4, md: 2 }}
+            textAlign="center"
+            boxShadow="base"
+            transition="all 0.3s"
+            _hover={{
+              transform: "translateY(-4px)",
+              shadow: "lg",
+            }}
+          >
+            <Image
+              src={step.icon}
+              boxSize={{ base: "50px", md: "70px" }}
+              mx="auto"
+              my={4}
+              alt={step.title}
+              transition="transform 0.3s ease-in-out"
+              _hover={{
+                transform: "scale(1.1)",
+              }}
+            />
+            <Text mt={4} fontSize={{ base: "xl", md: "2xl" }} fontWeight="bold">
+              {step.title}
+            </Text>
+            <Text mt={2} fontSize={{ base: "sm", md: "md" }}>
+              {step.description}
+            </Text>
+          </Flex>
         ))}
       </Flex>
     </Card>
