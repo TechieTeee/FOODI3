@@ -3,17 +3,17 @@ import { Card, Flex, Image, Text } from "@chakra-ui/react";
 const Steps = [
   {
     icon: "/notification.png",
-    title: "TAG",
+    title: "1. TAG",
     description: "Tag, you're it! Get real-time notifications for manager specials. Visit your preferred store and snag your favorite deals.",
   },
   {
     icon: "/grocery-cart.png",
-    title: "SNAG",
+    title: "2. SNAG",
     description: "Head to your chosen store and snag your favorite deals.",
   },
   {
     icon: "/money.png",
-    title: "BAG",
+    title: "3. BAG",
     description: "Secure the bag: scan your receipt, compete on the foodi3 leaderboard and earn rewards like extra grocery discounts, savings on local events, and B3tter tokens for anything.",
   },
 ];
@@ -25,16 +25,15 @@ export const Instructions = () => {
         p={{ base: 4 }}
         w="full"
         direction={{ base: "column", md: "row" }}
-        justifyContent="space-around" // Adjust alignment as needed
-        alignItems="center" // Adjust alignment as needed
-        flexWrap="wrap" // Ensure responsiveness on smaller screens
+        justifyContent="space-around"
+        alignItems="center"
+        flexWrap="wrap"
       >
         {Steps.map((step, index) => (
           <Flex
             key={index}
             direction="column"
             alignItems="center"
-            textAlign="center"
             maxW={{ base: "full", md: "md" }}
             p={6}
             borderWidth={1}
