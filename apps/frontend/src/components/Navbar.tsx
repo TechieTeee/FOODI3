@@ -1,5 +1,6 @@
 import { Box, Container, HStack, Image } from "@chakra-ui/react";
 import { ConnectWalletButton } from "./ConnectWalletButton";
+
 export const Navbar = () => {
   return (
     <Box
@@ -10,7 +11,7 @@ export const Navbar = () => {
       py={4}
       h={"auto"}
       w={"full"}
-      bg={"#f7f7f7"}
+      bg={"#FFF8E7"}  // Changed background color
     >
       <Container
         w="full"
@@ -21,7 +22,7 @@ export const Navbar = () => {
         maxW={"container.xl"}
       >
         <HStack flex={1} justifyContent={"start"}>
-          <Image src="/Foodi3_Logo.svg" width="33%" height="auto"/>
+          <Image src="/Foodi3_Logo.svg" width="33%" height="auto" />
         </HStack>
 
         <HStack flex={1} spacing={4} justifyContent={"end"}>

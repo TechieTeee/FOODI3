@@ -21,7 +21,7 @@ const Steps = [
 
 export const Instructions = () => {
   return (
-    <Card mt={3} w={"full"}>
+    <Card mt={3} w={"full"} bg="#FFF8E7"> {/* Changed bg color to #FFF8E7 */}
       <Flex
         p={{ base: 4 }}
         w="100%"
