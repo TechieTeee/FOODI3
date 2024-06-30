@@ -18,7 +18,7 @@ contract Foodi3 {
 
     // State variables
     address public admin;
-    mapping(address) public users;
+    mapping(address => User) public users;
     Receipt[] public receipts;
     mapping(string => bool) public receiptHashes; // To prevent duplicate receipts
 
