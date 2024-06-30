@@ -1,17 +1,44 @@
-Foodi3
+# Foodi3
 
-Unlock the potential of decentralized application development on Vechain with our X-App template for VeBetterDAO. Designed for the Vechain Thor blockchain, this template integrates cutting-edge technologies such as React, TypeScript, Hardhat, and Express, ensuring a seamless and efficient DApp development experience. 🌟
+Unlock the potential of decentralized application development on VeChain with our X-App template for VeBetterDAO. Designed for the VeChain Thor blockchain, this template integrates cutting-edge technologies such as React, TypeScript, Hardhat, and Express, ensuring a seamless and efficient DApp development experience. 🌟
+
+## Background
+
+Foodi3 is a decentralized application (DApp) template built on the VeChain Thor blockchain. It aims to revolutionize how users interact with food-related data by providing transparency, incentives, and community engagement. The platform utilizes smart contracts to manage receipts, validate purchases, and reward users for participating in food-related activities.
+
+## Problem
+
+The food industry lacks transparency, making it challenging for consumers to verify product claims such as vegan, vegetarian, kosher, fair trade, and allergen-free status. Existing centralized systems often fail to provide real-time information or incentives for consumers to engage actively with food-related data.
+
+## Unique Value Proposition
+
+Foodi3 offers:
+- **Transparency:** Real-time verification of food product claims through blockchain technology.
+- **Incentives:** Reward users for engaging with food-related data and making informed choices.
+- **Community Engagement:** Facilitate community interactions around food choices, sustainability, and ethical sourcing.
+
+## Scalability
+
+Built with scalability in mind, Foodi3 leverages VeChain's robust infrastructure to handle large-scale transactions efficiently. As more users join the platform, the decentralized nature of the application ensures scalability without compromising on security or performance.
+
+## Revenue Model
+
+Foodi3 generates revenue through:
+- **Transaction Fees:** Earn from transactions made on the platform.
+- **Premium Services:** Offer enhanced features or analytics tools for businesses and users.
+- **Advertising:** Partner with food brands for targeted advertising based on user preferences and data insights.
 
 ## Requirements
 
 Ensure your development environment is set up with the following:
 
-- **Node.js (v18 or later):** [Download here](https://nodejs.org/en/download/package-manager) 📥
-- **Yarn:** [Install here](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable) 🧶
-- **Docker (for containerization):** [Get Docker](https://docs.docker.com/get-docker/) 🐳
-- **Hardhat (for smart contracts):** [Getting Started with Hardhat](https://hardhat.org/hardhat-runner/docs/getting-started) ⛑️
+- **Node.js (v18 or later):** [Download here](https://nodejs.org/en/download/package-manager)
+- **Yarn:** [Install here](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable)
+- **Docker (for containerization):** [Get Docker](https://docs.docker.com/get-docker/)
+- **Hardhat (for smart contracts):** [Getting Started with Hardhat](https://hardhat.org/hardhat-runner/docs/getting-started)
 
 ## Project Structure
+
 ### Frontend (apps/frontend) 🌐
 
 A blazing-fast React application powered by Vite:
@@ -26,10 +53,6 @@ An Express server crafted with TypeScript for robust API development:
 ### Contracts (apps/contracts) 📜
 
 Smart contracts in Solidity, managed with Hardhat for deployment on the Vechain Thor network.
-
-### Packages 📦
-
-Shared configurations and utility functions to unify and simplify your development process.
 
 ## Environment Variables ⚙️
 
@@ -56,43 +79,25 @@ Manage deployment parameters and network configurations in `hardhat.config.js` u
 Clone the repository and install dependencies with ease:
 ```bash
 yarn install # Run this at the root level of the project
-```
 
-## Deploying Contracts 🚀
+## Deploying 🏁
+yarn contracts:deploy:solo or https://Remix.ethereum.org
 
-Deploy your contracts effortlessly on either the Testnet or Solo networks:
-
-### Deploying on Solo Network
-
-```bash
-yarn contracts:deploy:solo
-```
-
-### Deploying on Testnet
-
-```bash
+## Deploying on Testnet
 yarn contracts:deploy:testnet
-```
 
-## Running on Solo Network 🔧
+## Running on Solo Network
+yarn dev
 
-Run the Frontend and Backend, connected to the Solo network and pointing to your deployed contracts. Ensure all environment variables are properly configured:
-```bash
-yarn dev 
-```
-
-### Setting up rewards
-Run vechain devpal 
-```bash
+## Setting up rewards
 npx @vechain/devpal http://localhost:8669
-```
 
-Open the `Inspector` tab and perform the following transactions:
-- **Add Contracts:** Add the EcoEarn contract and the Token contract deployed previously. Addresses can be found in the `config-contracts` package. ABIs can be found in the artifacts folder of the `contracts` app.
-![image](https://github.com/vechain/x-app-template/assets/64158778/e288ada4-5973-4428-9e72-a362388b1826)
-- **Approve token:** Approve the EcoEarn contract to spend your tokens
-![image](https://github.com/vechain/x-app-template/assets/64158778/70787d8d-ae60-40ea-b277-87359aaca4ee)
-- **Claim rewards:** Claim rewards for the EcoEarn contract
-![image](https://github.com/vechain/x-app-template/assets/64158778/834437e5-8de1-4802-9ed7-dca6fe4df332)
-- **Trigger cycle:** Trigger the cycle for the EcoEarn contract
-![image](https://github.com/vechain/x-app-template/assets/64158778/00236dcd-5b64-4493-9acd-55c6a7f0981f)
+Open the Inspector tab and perform the following transactions:
+
+1. Add Contracts: Add the EcoEarn contract and the Token contract deployed previously. Addresses can be found in the config-contracts package. ABIs can be found in the artifacts folder of the contracts app.
+2. Approve token: Approve the EcoEarn contract to spend your tokens.
+3. Claim rewards: Claim rewards for the EcoEarn contract
+4. Trigger cycle: Trigger the cycle for the EcoEarn contract
+
+
+
